@@ -1,0 +1,915 @@
+@font-face {
+ font-family: 'NexaBold';
+ src:  url('../fonts/NexaBold.woff') format('woff');
+}
+
+@font-face {
+ font-family: 'NexaLight';
+ src:  url('../fonts/NexaLight.woff') format('woff');
+}
+
+@font-face {
+ font-family: 'FeltTipWoman';
+ src:  url('../fonts/FeltTipWoman.woff') format('woff');
+}
+
+* { box-sizing: border-box;}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.parent {
+	width: 100%;
+	font-family: 'NexaLight';
+	font-size: 16px;
+}
+
+/*Header*/
+
+.header {
+	background: url(../img/1.png) 100% 100% no-repeat;
+	max-width: 100%;
+	background-size: cover;
+	height: 100vh;
+	padding: 0 67px;
+	position: relative;
+}
+
+.nav {
+	position: relative;
+	overflow: hidden;
+	border-bottom: 1px solid #fff;
+}
+
+.nav-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	left: 50%;
+	float: left;
+}
+
+.nav-list__item {
+	position: relative;
+	left: -50%;
+	float: left;
+}
+
+.nav-list__item  a {
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	padding: 0 25px;
+	line-height: 40px;
+	font-family: 'NexaLight';
+}
+
+.nav-list__item:hover {
+	background-color: rgba(255, 255, 255, .5);
+}
+
+.logo {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 135px;
+	border-radius: 100%;
+	border: 10px solid #fff;
+}
+
+.logo:after {
+	content: "TM";
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	font-family: 'NexaBold';
+}
+
+.arr-1 {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 4px;
+	height: 60px;
+	background-color: #fff;
+}
+
+.arr-1:before {
+	content: "";
+	position: absolute;
+	top: -9px;
+	left: -20px;
+	transform: rotate(45deg);
+	width: 4px;
+	height: 60px;
+	background-color: #fff;
+}
+
+.arr-1:after {
+	content: "";
+	position: absolute;
+	top: -9px;
+	right: -20px;
+	transform: rotate(-45deg);
+	width: 4px;
+	height: 60px;
+	background-color: #fff;
+}
+
+.arr-2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 4px;
+	height: 60px;
+	background-color: #fff;
+}
+
+.arr-2:before {
+	content: "";
+	position: absolute;
+	top: -9px;
+	left: -20px;
+	transform: rotate(45deg);
+	width: 4px;
+	height: 60px;
+	background-color: #fff;
+}
+
+.arr-2:after {
+	content: "";
+	position: absolute;
+	top: -9px;
+	right: -20px;
+	transform: rotate(-45deg);
+	width: 4px;
+	height: 60px;
+	background-color: #fff;
+}
+
+.arr-3 {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 4px;
+	height: 80px;
+	background-color: #fff;
+}
+
+.arr-3:before {
+	content: "";
+	position: absolute;
+	top: -9px;
+	left: -20px;
+	transform: rotate(45deg);
+	width: 4px;
+	height: 60px;
+	background-color: #fff;
+}
+
+.arr-3:after {
+	content: "";
+	position: absolute;
+	top: -9px;
+	right: -20px;
+	transform: rotate(-45deg);
+	width: 4px;
+	height: 60px;
+	background-color: #fff;
+}
+
+.title {
+	text-align: center;
+	color: #fff;
+	margin-top: 400px;
+	font-size: 3rem;
+}
+
+.title span {
+	font-family: 'NexaBold';
+}
+
+.scroll {
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'NexaBold';
+	margin-top: 65px;
+}
+	
+.scroll-cont {
+	display: inline-block;
+	position: relative;
+	padding: 10px;
+	cursor: pointer;
+	animation-name: scroll-cont;
+    animation-duration: 1s;
+    animation-iteration-count: 999;
+}
+
+@keyframes scroll-cont {
+    0%   {margin-top: 0;}
+    50%  {margin-top: 10px;}
+    100% {margin-top: 0;}
+}
+
+.arr-4:before {
+	content: "";
+    position: absolute;
+    top: -3px;
+    left: -2px;
+    transform: rotate(135deg);
+    width: 3px;
+    height: 20px;
+    background-color: #fff;
+}
+
+.arr-4:after {
+	content: "";
+    position: absolute;
+    top: -3px;
+    transform: rotate(-135deg);
+    width: 3px;
+    height: 20px;
+    background-color: #fff;
+}
+
+.arr-5:before {
+	content: "";
+    position: absolute;
+    left: -2px;
+    transform: rotate(135deg);
+    width: 3px;
+    height: 20px;
+    background-color: #fff;
+}
+
+.arr-5:after {
+	content: "";
+    position: absolute;
+    transform: rotate(-135deg);
+    width: 3px;
+    height: 20px;
+    background-color: #fff;
+}
+
+/*about me*/
+
+.content-about {
+	padding: 0 67px;
+	position: relative;
+}
+
+.nav-2 {
+	position: relative;
+	overflow: hidden;
+	border-bottom: 1px solid #bebebe;
+}
+
+.nav-list__item-2 {
+	position: relative;
+	left: -50%;
+	float: left;
+}
+
+.nav-list__item-2 a {
+	color: #cecece;
+	display: block;
+	text-decoration: none;
+	padding: 0 25px;
+	line-height: 40px;
+	font-family: 'NexaLight';
+}
+
+.nav-list__item-2:hover {
+	background-color: rgba(206, 206, 206, .5);
+}
+
+.foto-jason {
+	background-image: url(../img/JasonWood.png);
+	width: 45%;
+	float: left;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 100%;
+	margin: 75px 0 0 20px;
+}
+
+.text-about {
+	float: right;
+	width: 50%;
+	margin-top: 105px;
+}
+
+.text-about h2 {
+	font-family: 'NexaLight';
+	font-size: 60px
+}
+
+.text-about p {
+	font-size: 24px;
+	line-height: 40px;
+}
+
+.scroll-2 {
+	text-align: center;
+	text-transform: uppercase;
+	color: #bebebe;
+	font-family: 'NexaBold';
+	margin: 65px 0;
+}
+	
+.scroll-cont__2 {
+	display: inline-block;
+	position: absolute;
+	padding: 10px;
+	cursor: pointer;
+	animation-name: scroll-cont;
+    animation-duration: 1s;
+    animation-iteration-count: 999;
+    margin-bottom: 10px;
+}
+
+@keyframes scroll-cont {
+    0%   {margin-top: 0;}
+    50%  {margin-top: 10px;}
+    100% {margin-top: 0;}
+}
+
+.arr-4__2:before {
+	content: "";
+    position: absolute;
+    top: -3px;
+    left: -2px;
+    transform: rotate(135deg);
+    width: 3px;
+    height: 20px;
+    background-color: #bebebe;
+}
+
+.arr-4__2:after {
+	content: "";
+    position: absolute;
+    top: -3px;
+    transform: rotate(-135deg);
+    width: 3px;
+    height: 20px;
+    background-color: #bebebe;
+}
+
+.arr-5__2:before {
+	content: "";
+    position: absolute;
+    left: -2px;
+    transform: rotate(135deg);
+    width: 3px;
+    height: 20px;
+    background-color: #bebebe;
+}
+
+.arr-5__2:after {
+	content: "";
+    position: absolute;
+    transform: rotate(-135deg);
+    width: 3px;
+    height: 20px;
+    background-color: #bebebe;
+}
+
+.Tip {
+	font-family: 'FeltTipWoman';
+	font-size: 36px;
+}
+
+/*Portfolio*/
+
+.content-portfolio {
+	background: url(../img/2.png) 100% 100% no-repeat;
+	max-width: 100%;
+	background-size: cover;
+	height: 120vh;
+	padding: 0 67px;
+	position: relative;
+}
+
+.content-portfolio h2 {
+	color: #fff;
+	text-align: center;
+	margin-top: 90px;
+}
+
+.foto-portfolio__slide {
+	display: flex;
+	flex-direction: row;
+}
+
+.foto-portfolio__slide2 {
+	display: flex;
+	flex-direction: row;
+}
+
+.slide {
+	width: 15%;
+	height: 15%;
+	margin: 40px 0 20px 50px;
+}
+
+.slide:hover {
+	border: 3px solid #fff;
+}
+
+
+/*Contact*/
+
+.contact {
+	padding: 0 67px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.contact a {
+	text-decoration: none;
+	color: #000;
+}
+
+.mail {
+	margin-top: 100px;
+}
+
+.social-icon {
+	margin-bottom: 100px;
+}
+
+.author {
+	font-size: 18px;
+	color: #bebebe;
+	text-align: center;
+	padding: 20px 0 20px 0;
+	border-top: 1px solid #bebebe;
+=======
+@font-face {
+ font-family: 'NexaBold';
+ src:  url('../fonts/NexaBold.woff') format('woff');
+}
+
+@font-face {
+ font-family: 'NexaLight';
+ src:  url('../fonts/NexaLight.woff') format('woff');
+}
+
+* { box-sizing: border-box;}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.parent {
+	width: 100%;
+	font-family: 'NexaLight';
+	font-size: 16px;
+}
+
+/*Header*/
+
+.header {
+	background: url(../img/1.png) 100% 100% no-repeat;
+	max-width: 100%;
+	background-size: cover;
+	height: 100vh;
+	padding: 0 67px;
+	position: relative;
+}
+
+.nav {
+	position: relative;
+	overflow: hidden;
+	border-bottom: 1px solid #fff;
+}
+
+.nav-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	left: 50%;
+	float: left;
+}
+
+.nav-list__item {
+	position: relative;
+	left: -50%;
+	float: left;
+}
+
+.nav-list__item  a {
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	padding: 0 25px;
+	line-height: 40px;
+	font-family: 'NexaLight';
+}
+
+.nav-list__item:hover {
+	background-color: rgba(255, 255, 255, .5);
+}
+
+.logo {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 135px;
+	border-radius: 100%;
+	border: 10px solid #fff;
+}
+
+.logo:after {
+	content: "TM";
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	font-family: 'NexaBold';
+}
+
+.arr-1 {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 4px;
+	height: 60px;
+	background-color: #fff;
+}
+
+.arr-1:before {
+	content: "";
+	position: absolute;
+	top: -9px;
+	left: -20px;
+	transform: rotate(45deg);
+	width: 4px;
+	height: 60px;
+	background-color: #fff;
+}
+
+.arr-1:after {
+	content: "";
+	position: absolute;
+	top: -9px;
+	right: -20px;
+	transform: rotate(-45deg);
+	width: 4px;
+	height: 60px;
+	background-color: #fff;
+}
+
+.arr-2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 4px;
+	height: 60px;
+	background-color: #fff;
+}
+
+.arr-2:before {
+	content: "";
+	position: absolute;
+	top: -9px;
+	left: -20px;
+	transform: rotate(45deg);
+	width: 4px;
+	height: 60px;
+	background-color: #fff;
+}
+
+.arr-2:after {
+	content: "";
+	position: absolute;
+	top: -9px;
+	right: -20px;
+	transform: rotate(-45deg);
+	width: 4px;
+	height: 60px;
+	background-color: #fff;
+}
+
+.arr-3 {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 4px;
+	height: 80px;
+	background-color: #fff;
+}
+
+.arr-3:before {
+	content: "";
+	position: absolute;
+	top: -9px;
+	left: -20px;
+	transform: rotate(45deg);
+	width: 4px;
+	height: 60px;
+	background-color: #fff;
+}
+
+.arr-3:after {
+	content: "";
+	position: absolute;
+	top: -9px;
+	right: -20px;
+	transform: rotate(-45deg);
+	width: 4px;
+	height: 60px;
+	background-color: #fff;
+}
+
+.title {
+	text-align: center;
+	color: #fff;
+	margin-top: 400px;
+	font-size: 3rem;
+}
+
+.title span {
+	font-family: 'NexaBold';
+}
+
+.scroll {
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'NexaBold';
+	margin-top: 65px;
+}
+	
+.scroll-cont {
+	display: inline-block;
+	position: relative;
+	padding: 10px;
+	cursor: pointer;
+	animation-name: scroll-cont;
+    animation-duration: 1s;
+    animation-iteration-count: 999;
+}
+
+@keyframes scroll-cont {
+    0%   {margin-top: 0;}
+    50%  {margin-top: 10px;}
+    100% {margin-top: 0;}
+}
+
+.arr-4:before {
+	content: "";
+    position: absolute;
+    top: -3px;
+    left: -2px;
+    transform: rotate(135deg);
+    width: 3px;
+    height: 20px;
+    background-color: #fff;
+}
+
+.arr-4:after {
+	content: "";
+    position: absolute;
+    top: -3px;
+    transform: rotate(-135deg);
+    width: 3px;
+    height: 20px;
+    background-color: #fff;
+}
+
+.arr-5:before {
+	content: "";
+    position: absolute;
+    left: -2px;
+    transform: rotate(135deg);
+    width: 3px;
+    height: 20px;
+    background-color: #fff;
+}
+
+.arr-5:after {
+	content: "";
+    position: absolute;
+    transform: rotate(-135deg);
+    width: 3px;
+    height: 20px;
+    background-color: #fff;
+}
+
+/*about me*/
+
+.content-about {
+	padding: 0 67px;
+	position: relative;
+}
+
+.nav-2 {
+	position: relative;
+	overflow: hidden;
+	border-bottom: 1px solid #bebebe;
+}
+
+.nav-list__item-2 {
+	position: relative;
+	left: -50%;
+	float: left;
+}
+
+.nav-list__item-2 a {
+	color: #cecece;
+	display: block;
+	text-decoration: none;
+	padding: 0 25px;
+	line-height: 40px;
+	font-family: 'NexaLight';
+}
+
+.nav-list__item-2:hover {
+	background-color: rgba(206, 206, 206, .5);
+}
+
+.foto-jason {
+	background-image: url(../img/JasonWood.png);
+	width: 50%;
+	float: left;
+	height: 100vh;
+	background-repeat: no-repeat;
+	margin-top: 75px;
+}
+
+.text-about {
+	float: right;
+	width: 50%;
+	margin-top: 105px;
+}
+
+.text-about h2 {
+	font-family: 'NexaLight';
+	font-size: 60px
+}
+
+.text-about p {
+	font-size: 24px;
+	line-height: 40px;
+}
+
+.scroll-2 {
+	text-align: center;
+	text-transform: uppercase;
+	color: #bebebe;
+	font-family: 'NexaBold';
+	margin: 65px 0;
+}
+	
+.scroll-cont__2 {
+	display: inline-block;
+	position: absolute;
+	padding: 10px;
+	cursor: pointer;
+	animation-name: scroll-cont;
+    animation-duration: 1s;
+    animation-iteration-count: 999;
+    margin-bottom: 10px;
+}
+
+@keyframes scroll-cont {
+    0%   {margin-top: 0;}
+    50%  {margin-top: 10px;}
+    100% {margin-top: 0;}
+}
+
+.arr-4__2:before {
+	content: "";
+    position: absolute;
+    top: -3px;
+    left: -2px;
+    transform: rotate(135deg);
+    width: 3px;
+    height: 20px;
+    background-color: #bebebe;
+}
+
+.arr-4__2:after {
+	content: "";
+    position: absolute;
+    top: -3px;
+    transform: rotate(-135deg);
+    width: 3px;
+    height: 20px;
+    background-color: #bebebe;
+}
+
+.arr-5__2:before {
+	content: "";
+    position: absolute;
+    left: -2px;
+    transform: rotate(135deg);
+    width: 3px;
+    height: 20px;
+    background-color: #bebebe;
+}
+
+.arr-5__2:after {
+	content: "";
+    position: absolute;
+    transform: rotate(-135deg);
+    width: 3px;
+    height: 20px;
+    background-color: #bebebe;
+}
+
+/*Portfolio*/
+
+.content-portfolio {
+	background: url(../img/2.png) 100% 100% no-repeat;
+	max-width: 100%;
+	background-size: cover;
+	height: 120vh;
+	padding: 0 67px;
+	position: relative;
+}
+
+.content-portfolio h2 {
+	color: #fff;
+	text-align: center;
+	margin-top: 90px;
+}
+
+.foto-portfolio__slide {
+	display: flex;
+	flex-direction: row;
+}
+
+.foto-portfolio__slide2 {
+	display: flex;
+	flex-direction: row;
+}
+
+.slide {
+	width: 15%;
+	height: 15%;
+	margin: 40px 0 20px 50px;
+}
+
+.slide:hover {
+	outline: 3px solid #fff;
+}
+
+
+/*Contact*/
+
+.contact {
+	padding: 0 67px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.contact a {
+	text-decoration: none;
+	color: #000;
+}
+
+.mail {
+	margin-top: 100px;
+}
+
+.social-icon {
+	margin-bottom: 100px;
+}
+
+.author {
+	font-size: 18px;
+	color: #bebebe;
+	text-align: center;
+	padding: 20px 0 20px 0;
+	border-top: 1px solid #bebebe;
+>>>>>>> 6abb7bef14a7344812e36f6882c345e05d5c08b1
+}
